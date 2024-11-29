@@ -1,0 +1,57 @@
+
+
+/* Estilo general */
+.landing-page {
+    background-color: #EAA669; /* Color del fondo */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  
+  /* Logo */
+  .logo {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Títulos */
+  .title {
+    color: #332F29; /* Color del texto */
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    color: #5A4A42;
+    font-size: 1rem;
+  }
+  
+  /* Botones */
+  .button-group .btn {
+    border-color: #B06F53;
+    color: #B06F53;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+  }
+  
+  .button-group .btn:hover {
+    background-color: #B06F53;
+    color: #FFFFFF;
+  }
+  
+  /* Spinner */
+  .spinner-border {
+    width: 2rem;
+    height: 2rem;
+    
+    
+    
+  }
+  
+  .giro{
+   
+    margin-bottom: 80px;
+  }
