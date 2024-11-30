@@ -1,0 +1,16 @@
+.carousel-inner img,
+.carousel-inner video {
+  max-height: 300px; /* Ajustar tamaño del carrusel */
+  object-fit: cover;
+}
+
+.carousel-text {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #f8f9fa;
+}
+

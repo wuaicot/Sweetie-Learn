@@ -1,0 +1,32 @@
+.home-prep {
+    background-color: #b3a1f5; /* Color de fondo */
+    min-height: 100vh;
+  }
+  
+  .title {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .carousel-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Altura del carrusel */
+    background-color: #fff;
+    color: #333;
+    font-size: 1.2rem;
+  }
+  
+  .footer-nav div {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .footer-nav i {
+    font-size: 1.5rem;
+    display: block;
+  }
+  

@@ -1,41 +1,33 @@
-
 import React from 'react';
+import { useNavigate } from "react-router-dom";
+import Spinner from '../../components/For_LandingPage/Spinner';
+import ButtonGroup from '../../components/For_LandingPage/ButtonGroup';
 import '../../Styles/LandingPage.css';
 
-
-
-
 const LandingPage = () => {
+  const navigate = useNavigate();
+
+  const buttons = [
+    { text: 'Limpieza', onClick: () => alert('Registrarse para Limpieza') },
+    { text: 'Preparaciones', onClick: () => navigate('/home-prep') }, // Redirige a HomePrep
+  ];
+
   return (
     <div className="container-fluid landing-page text-center">
-      {/* Header con imagen */}
-      <header className="py-3 ">
-        <img
-          src="https://via.placeholder.com/300x100" // Reemplaza con la URL del logo.
-          alt="Brussels Heart of Chocolate"
-          className="img-fluid logo"
-        />
-      </header>
-
-      {/* Título y subtítulo */}
+      {/* Contenido principal */}
       <main className="content">
-        <h1 className="title  pb-2">Bienvenido a la App Dulcito</h1>
-        <p className="subtitle pb-5">
+        <h1 className="title">Bienvenido a la App Dulcito</h1>
+        <p className="subtitle">
           Donde aprenderás a ser el mejor en cada área. Elija una opción:
         </p>
 
-        {/* Botones de navegación */}
-        <div className="button-group d-flex justify-content-center">
-        <button className="btn btn-outline-primary mx-4 my-1 ">Limpieza</button>
-        <button className="btn btn-outline-primary mx-4 my-1">Preparaciones</button>
-        </div>
+        {/* Botones */}
+        <ButtonGroup buttons={buttons} />
       </main>
 
-      {/* Spinner de carga */}
-      <footer className="giro">
-        <div className="spinner-border  text-dark" role="status">
-          <span className="visually-hidden">Cargando...</span>
-        </div>
+      {/* Spinner */}
+      <footer className="py-4">
+        <Spinner />
       </footer>
     </div>
   );
