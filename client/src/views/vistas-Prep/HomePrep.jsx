@@ -3,7 +3,8 @@ import Header from '../../components/For_HomePrep/Header';
 import Carousel from '../../components/For_HomePrep/Carousel';
 import FooterNavigation from '../../components/For_HomePrep/FooterNavigation';
 import '../../StylesFor_components/FooterNavigation.css'
-import '../../Styles/HomePrep.css';
+import '../../StylesViews/HomePrep.css';
+//import HomeIcon from '../../components/For_Postres/Homeicon';
 
 const HomePrep = () => {
   // Datos para el carrusel
@@ -14,18 +15,20 @@ const HomePrep = () => {
   ];
 
   return (
-    <div className="container-fluid home-prep text-center">
-      {/* Header con logo */}
-      <Header logoSrc="https://via.placeholder.com/50" altText="Logo Dulcito" />
 
-      {/* Navegación superior */}
-      <div className="d-flex justify-content-end mt-3 me-4">
-        <button className="btn btn-outline-secondary mx-2">Postres</button>
-        <button className="btn btn-outline-secondary mx-2">Bebidas</button>
-      </div>
+      
+
+
+    <div className="container-fluid pt-3 home-prep text-center">
+      {/* Header con logo */}
+      <Header  logoSrc="https://via.placeholder.com/50" altText="Logo Dulcito" />
+
+      {/* <HomeIcon /> */}
+
+      
 
       {/* Título */}
-      <h1 className="mt-4 title">¡Saludo!</h1>
+      <h1 className="mt-5 title text-black">Aquí va el Saludo!</h1>
 
       {/* Carrusel */}
       <div className="my-5">
@@ -33,7 +36,8 @@ const HomePrep = () => {
       </div>
 
       {/* Navegación inferior */}
-      <FooterNavigation />
+      <FooterNavigation className= ""  />
+
     </div>
   );
 };
