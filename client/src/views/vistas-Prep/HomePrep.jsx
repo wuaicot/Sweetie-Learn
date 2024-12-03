@@ -4,7 +4,7 @@ import Carousel from '../../components/For_HomePrep/Carousel';
 import FooterNavigation from '../../components/For_HomePrep/FooterNavigation';
 import '../../StylesFor_components/FooterNavigation.css'
 import '../../StylesViews/HomePrep.css';
-//import HomeIcon from '../../components/For_Postres/Homeicon';
+
 
 const HomePrep = () => {
   // Datos para el carrusel
@@ -14,24 +14,18 @@ const HomePrep = () => {
     { type: 'text', content: '¡Bienvenidos al contenido del carrusel!', alt: 'Texto 1' },
   ];
 
-  return (
+  return (    
 
-      
-
-
-    <div className="container-fluid pt-3 home-prep text-center">
+    <div className="container-fluid pt-3 text-center">
       {/* Header con logo */}
-      <Header  logoSrc="https://via.placeholder.com/50" altText="Logo Dulcito" />
-
-      {/* <HomeIcon /> */}
-
+      <Header  logoSrc="https://via.placeholder.com/50" altText="Logo Dulcito" />   
       
 
       {/* Título */}
-      <h1 className="mt-5 title text-black">Aquí va el Saludo!</h1>
+      <h1 className="mt-5 title text-black">Aquí el Saludo!</h1>
 
       {/* Carrusel */}
-      <div className="my-5">
+      <div className="my-4">
         <Carousel items={carouselItems} />
       </div>
 

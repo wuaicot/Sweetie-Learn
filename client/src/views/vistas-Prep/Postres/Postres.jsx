@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Importar el hook de navegación
 import HomeIcon from '../../../components/For_Postres/Homeicon';
 
 const Postres = () => {
+  const navigate = useNavigate(); // Inicializar el hook de navegación
+
   return (
     <div
       className="d-flex flex-column justify-content-center align-items-center vh-100"
@@ -10,11 +13,8 @@ const Postres = () => {
         color: '#EAA669',
       }}
     >
-
-
       {/* Ícono de Home */}
       <HomeIcon />
-
 
       {/* Título */}
       <h1 className="mb-5" style={{ fontSize: '2.5rem', fontWeight: 'bold' }}>
@@ -26,6 +26,7 @@ const Postres = () => {
         <button
           className="btn btn-danger rounded-pill mx-3 px-4 py-2"
           style={{ fontWeight: 'bold' }}
+          onClick={() => navigate('/view-waffles')} // Navegar a la ruta de Postres Calientes
         >
           Calientes
         </button>
@@ -37,12 +38,13 @@ const Postres = () => {
             fontWeight: 'bold',
           }}
         >
-          ó
+          
         </span>
 
         <button
           className="btn btn-primary rounded-pill mx-3 px-4 py-2"
           style={{ fontWeight: 'bold' }}
+          onClick={() => navigate('/postres-fríos')} // Navegar a la ruta de Postres Fríos
         >
           Fríos
         </button>
@@ -52,7 +54,7 @@ const Postres = () => {
       <button
         className="btn btn-link text-light mt-5"
         style={{ textDecoration: 'none', fontSize: '1rem' }}
-        onClick={() => window.history.back()}
+        onClick={() => navigate(-1)} // Volver a la página anterior
       >
         <i className="bi bi-arrow-left"></i> Atrás
       </button>
@@ -62,6 +64,80 @@ const Postres = () => {
 
 export default Postres;
 
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react';
+// import '../../../StylesViews/Postres.css';
+
+// const Postres = () => {
+//   return (
+//     <div
+//       className="d-flex flex-column justify-content-center align-items-center vh-100"
+      
+//     >
+//       {/* Título */}
+//       <h1 className="mb-5" style={{ fontSize: '2.5rem', fontWeight: 'bold' }}>
+//         Postres
+//       </h1>
+//       <br/>
+//       <br/>
+//       <br/>
+//       <br/>
+
+//       {/* Botones de selección */}
+//       <div className="d-flex justify-content-between align-items-center">
+//         <button
+//           className="btn btn-danger rounded-pill mx-3 px- py-2"
+//           style={{ fontWeight: 'bold' }}
+//         >
+//           Calientes
+//         </button>
+
+//         <span
+//           style={{
+//             color: '#FFFFFF',
+//             fontSize: '1.5rem',
+//             fontWeight: 'bold',
+//           }}
+//         >
+          
+//         </span>
+
+//         <button
+//           className="btn btn-primary rounded-pill mx-3 px-4 py-2"
+//           style={{ fontWeight: 'bold' }}
+//         >
+//           Fríos
+//         </button>
+//       </div>
+//       <br/>
+//       <br/>
+//       <br/>
+//       <br/>
+
+//       {/* Botón de "Atrás" */}
+//       <button
+//         className="btn btn-link text-black mt-5 "
+//         style={{ textDecoration: 'none', fontSize: '1.1rem' }}
+//         onClick={() => window.history.back()}
+//       >
+//         <i className="bi bi-arrow-left"></i> Atrás
+//       </button>
+//     </div>
+//   );
+// };
+
+// export default Postres;
 
 
 

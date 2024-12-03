@@ -1,9 +1,14 @@
 header {
-    background-color: #f8f9fa; /* Color claro de fondo */
-    border-bottom: 1px solid #ddd; /* Línea de separación */
+    margin-top: 10px;
+    background-color: #42424210; /* Color claro de fondo */
+    border-bottom: 1px solid #bbb9b9; /* Línea de separación */
+    border-radius: 11px;
+    
   }
   
   .logo img {
-    border-radius: 50%; /* Logo circular */
+    border-radius: 50px; /* Logo circular */
+    
   }
+  
   

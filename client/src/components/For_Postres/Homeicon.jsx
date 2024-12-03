@@ -19,7 +19,7 @@ const HomeIcon = () => {
         className="bi bi-house-fill"
         style={{
           fontSize: '2rem',
-          color: '#EAA669',
+          color: '#fcfc',
         }}
       ></i>
     </div>

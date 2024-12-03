@@ -6,11 +6,11 @@ const Header = ({ onBack, showBackButton = false }) => {
   return (
     <header className="d-flex justify-content-between align-items-center p-3">
       {/* Botón de regresar */}
-      {showBackButton && (
+      {/* {showBackButton && (
         <button className="btn btn-link text-dark" onClick={onBack}>
           <i className="bi bi-arrow-left"></i> Atrás
         </button>
-      )}
+      )} */}
 
       {/* Logo */}
       <div className="logo">
